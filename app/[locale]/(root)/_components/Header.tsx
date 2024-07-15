@@ -1,7 +1,8 @@
 "use client"
 
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
+import  { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import { Menu } from 'lucide-react';
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
 

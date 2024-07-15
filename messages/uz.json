@@ -1,0 +1,9 @@
+{
+	"Navbar": {
+		"search": "Izlash",
+		"basket": "Savat",
+		"favorites": "Tanlanganlar",
+		"auth": "Kirish",
+		"catalog": "Katalog"
+	}
+} 

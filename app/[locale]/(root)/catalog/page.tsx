@@ -80,7 +80,8 @@ const Clothes = () => {
                                     <img
                                         className="h-full aspect-[1/1] object-center content-center transition-transform duration-300"
                                         src={card.image}
-                                        alt="logo"/>
+                                        alt="logo"
+                                    />
                                 </a>
                             </div>
                             <div

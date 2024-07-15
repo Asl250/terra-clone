@@ -1,7 +1,7 @@
-import Footer from '@/app/(root)/_components/Footer'
-import Header from '@/app/(root)/_components/Header'
-import Menu from '@/app/(root)/_components/Menu'
-import Navbar from '@/app/(root)/_components/Navbar'
+import Footer from '@/app/[locale]/(root)/_components/Footer'
+import Header from '@/app/[locale]/(root)/_components/Header'
+import Menu from '@/app/[locale]/(root)/_components/Menu'
+import Navbar from '@/app/[locale]/(root)/_components/Navbar'
 import type { ChildProps } from '@/types'
 
 const Layout = async ({ children } :ChildProps) => {

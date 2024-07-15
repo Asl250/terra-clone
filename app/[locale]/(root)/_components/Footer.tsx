@@ -5,7 +5,7 @@ import {FaClock, FaInstagram, FaMapMarkerAlt} from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
-import logo from '../../../public/footer_logo/terra-footer.svg'
+import logo from '../../../../public/footer_logo/terra-footer.svg'
 
 const Footer = () => {
 	return (
@@ -13,19 +13,6 @@ const Footer = () => {
 			<Link href={'/'}>
 				<Image src={logo} alt={'logo'} className={'flex mx-auto pt-8'}/>
 			</Link>
-			{/*<div className={'mx-auto text-center flex w-[360px] h-[124] mt-[50px]'}>*/}
-			{/*	<div className={'flex text-white font[TT Hoves]'}>*/}
-			{/*		Kompaniya haqida*/}
-			{/*		Karyera*/}
-			{/*		Kontaktlar*/}
-			{/*		Do'konlar*/}
-			{/*		Mening hisobim*/}
-			{/*		Ommaviy taklif*/}
-			{/*		Maxfiylik siyosati*/}
-			{/*		Yetkazib berish shartlari*/}
-			{/*		aytish shartlari*/}
-			{/*	</div>*/}
-			{/*</div>*/}
 			<div className={'mx-auto flex w-[130px] gap-3 pt-[40px]'}>
 				<PiTelegramLogo className={'text-[rgb(122,125,140)] text-4xl'}/>
 				<FaFacebookF className={'text-[rgb(122,125,140)] text-4xl'}/>
@@ -41,7 +28,7 @@ const Footer = () => {
 				<div className={'flex text-[rgb(122,125,140)] gap-2 w-[180px] max-sm:mx-auto md:mx-auto'}>
 					<FaMapMarkerAlt className={'my-auto text-[rgb(122,125,140)] text-xl'}/>
 					<p className={'me-auto'}>
-						Xaritada ko'rsatish
+						Xaritada korsatish
 					</p>
 				</div>
 				<div className={'flex text-[rgb(122,125,140)] gap-2 w-[190px] max-sm:mx-auto md:mx-auto'}>
