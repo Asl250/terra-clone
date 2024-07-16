@@ -5,7 +5,7 @@ import {FaClock, FaInstagram, FaMapMarkerAlt} from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
-import logo from '../../../../public/footer_logo/terra-footer.svg'
+import logo from '../../../public/footer_logo/terra-footer.svg'
 
 const Footer = () => {
 	return (

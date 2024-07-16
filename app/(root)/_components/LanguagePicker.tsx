@@ -3,14 +3,11 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import uzb from '@/public/languages/flag-for-flag-uzbekistan-svgrepo-com.svg'
 import rus from '@/public/languages/flag-for-russia-svgrepo-com.svg'
-import { useLocale } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoLanguage } from 'react-icons/io5'
 
 const LanguagePicker = () => {
-	const locale = useLocale();
-	console.log(locale)
 	
 	return (
 		<DropdownMenu>

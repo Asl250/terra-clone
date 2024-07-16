@@ -1,13 +1,11 @@
-import LanguagePicker from '@/app/[locale]/(root)/_components/LanguagePicker'
+import LanguagePicker from '@/app/(root)/_components/LanguagePicker'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import terra_logo from '../../../../public/logo/terra_logo.svg'
-import { Search , ShoppingCart, User, Heart, X} from 'lucide-react';
+import terra_logo from '../../../public/logo/terra_logo.svg'
+import { Search, ShoppingCart, User, Heart, Menu } from 'lucide-react'
 
 const Navbar = () => {
-	const t = useTranslations('Navbar');
 	
 	
 	return (
@@ -37,29 +35,26 @@ const Navbar = () => {
 					<div className={'flex justify-end space-x-[15%]'}>
 						<div
 							className={'text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
-							<Drawer>
-								<DrawerTrigger>
-									<Search className={'mx-auto'} />
-									{t('search')}
-								</DrawerTrigger>
-								<DrawerContent>
-								</DrawerContent>
-							</Drawer>
-						</div>
-						<div
-							className={'text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
-							<ShoppingCart className={'mx-auto'} />
-							{t('basket')}
+							<Link href={'/catalog'}>
+								<Menu className={'mx-auto'} />
+								catalog
+							</Link>
+
 						</div>
 						<div
 							className={'text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
 							<Heart className={'mx-auto'} />
-							{t('favorites')}
+							favorites
 						</div>
 						<div
 							className={'text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
 							<User className={'mx-auto'} />
-							{t('auth')}
+							auth
+						</div>
+						<div
+							className={'text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
+							<ShoppingCart className={'mx-auto'} />
+							basket
 						</div>
 					</div>
 				
