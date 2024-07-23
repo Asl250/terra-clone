@@ -129,14 +129,6 @@ const Navbar = () => {
 											</Link>
 										</MenubarItem>
 										
-										<MenubarSeparator/>
-										
-										<MenubarItem>
-											<Link href={'/company/FAQ'}>
-												FAQ
-											</Link>
-										</MenubarItem>
-										
 									</MenubarContent>
 								</MenubarMenu>
 							</Menubar>

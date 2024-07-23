@@ -3,7 +3,7 @@
 import { Loader } from '@googlemaps/js-api-loader'
 import React, { useEffect, useRef } from 'react'
 
-const Stors = () => {
+const Contact = () => {
 	const mapRef = React.useRef<HTMLDivElement>(null)
 	
 	useEffect(() => {
@@ -14,7 +14,7 @@ const Stors = () => {
 			})
 			const { Map } = await loader.importLibrary('maps')
 			const locationMap = {
-				lat: 41.3775,
+				lat: 42.3775,
 				lng: 64.5853,
 			}
 			// MARKER
@@ -26,14 +26,14 @@ const Stors = () => {
 				mapId: "NEXT_MAPS"
 			}
 			const map = new Map(mapRef.current as HTMLDivElement, options)
-		
-		// 	add the marker in the map
+			
+			// 	add the marker in the map
 			const marker = new Marker({
 				map: map,
 				position: locationMap
 			})
 		}
-
+		
 		initializeMap()
 	}, [])
 	
@@ -43,4 +43,4 @@ const Stors = () => {
 		</div>
 	)
 }
-export default Stors
+export default Contact
