@@ -1,84 +1,25 @@
 "use client"
 
-import Link from "next/link";
-import { useState } from "react";
+import Paragraph from '@/components/card/Paragraph'
+import { card } from '@/constants'
 
-const Clothes = () => {
-    const [card, setCard] = useState(
-        [
-            {
-                title: "Tashqi Kiyim",
-                link: "/tashqi-kiyim",
-                image: "/catalog/tashqi1.webp"
-            },
-            {
-                title: "Tolstovka",
-                link: "/tolstovka",
-                image: "/catalog/tolstovka.webp"
-            },
-            {
-                title: "Jemperlar",
-                link: "/jemper-cardigan",
-                image: "/catalog/jemper.webp"
-            },
-            {
-                title: "Futbolkalar va pololar",
-                link: "/futbolka-polo",
-                image: "/catalog/futbolka.webp"
-            },
-            {
-                title: "Ko'ylaklar",
-                link: "/ko'ylaklar",
-                image: "/catalog/ko'ylaklar.webp"
-            },
-            {
-                title: "Shimlar",
-                link: "/shimlar",
-                image: "/catalog/shimlar.webp"
-            },
-            {
-                title: "Jinslar",
-                link: "/jinslar",
-                image: "/catalog/jinslar.webp"
-            },
-            {
-                title: "Pidjak",
-                link: "/pidjak",
-                image: "/catalog/pidjak.webp"
-            },
-            {
-                title: "Shortilar",
-                link: "/shortilar",
-                image: "/catalog/shortilar.webp"
-            },
-            {
-                title: "Aksesuarlar",
-                link: "/aksesuarlar",
-                image: "/catalog/aksasuar.webp"
-            },
-        ]
-    )
 
+const Clothes = async () => {
+  
     return (
         <div>
-            <div className={'text-center flex gap-2 mx-auto w-[180px] mt-5'}>
-                <Link href={'/'}>
-                    <h1 className={'text-[rgb(189,190,191)] hover:text-black'}>Asosiy</h1>
-                </Link>
-                <p className={'text-[rgb(189,190,191)]'}>-</p>
-                <h1> Kiyim katalogi</h1>
-            </div>
-            <h1 className={'text-4xl text-center mt-[20px]'}><strong>Kiyim Katalogi</strong></h1>
-            <div className={'mx-auto max-md:mx-[13%] max-sm:mx-[3%] mt-[40px] grid 2xl:grid-cols-3 xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 max-sm:grid-cols-1 gap-5'}>
+          <Paragraph text={'Kiyim Katalogi'}/>
+          
+          <div className={'mx-auto max-md:mx-[13%] max-sm:mx-[3%] mt-[40px] grid 2xl:grid-cols-3 xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 max-sm:grid-cols-1 gap-5'}>
                 {card.map((card, idx) => {
                     return (
                          <div
                             key={idx}
-                            className="transition duration-200 group relative cursor-pointer items-center justify-center xl:w-[640px] xl:h-[800px] h-[600px] max-sm:w-[350px] md:w-[380px]">
+                            className="transition duration-200 group relative cursor-pointer items-center justify-center xl:w-[640px] xl:h-[800px] h-[600px] max-sm:w-[350px] md:w-[380px] max-xl:mx-[5%] max-sm:mx-auto">
                             <div className="h-full">
                                 <a href={card.link}>
                                     <img
-                                        className="h-full aspect-[1/1] object-center content-center transition-transform duration-300"
+                                        className="h-full grid xl:grid-cols-3 lg:grid-cols-2 max-lg:grid-cols-1 aspect-[1/1] object-center content-center transition-transform duration-300"
                                         src={card.image}
                                         alt="logo"
                                     />

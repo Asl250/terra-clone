@@ -29,7 +29,7 @@ const Menu = () => {
 			
 			<div className={'max-md:text-sm text-xl text-gray-400 hover:text-black cursor-pointer transition duration-300'}>
 				<Heart className={'mx-auto max-md:w-6 max-md:h-6'} width={30} height={30} />
-				favorites
+				<p className={'text-xl max-md:text-md max-md:text-sm md:ml-8'}>favourite</p>
 			</div>
 			
 			<div className={'md:hidden text-lg text-gray-400 hover:text-black cursor-pointer transition duration-300'}>

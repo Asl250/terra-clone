@@ -1,4 +1,5 @@
-import { card } from '@/components/homeComponents/Swiper'
+import { card } from '@/constants'
+
 const HomeCatalog = () => {
 	return (
 		<div

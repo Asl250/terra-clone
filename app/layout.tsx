@@ -1,6 +1,5 @@
+import { ClerkProvider} from '@clerk/nextjs'
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,10 +18,12 @@ export default async function RootLayout({
 }>) {
   
   return (
+    <ClerkProvider>
     <html lang='en'>
       <body className={inter.className}>
         {children}
       </body>
     </html>
+    </ClerkProvider>
   );
 }

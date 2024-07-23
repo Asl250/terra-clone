@@ -81,11 +81,11 @@ const CarouselComponent = () => {
 					</div>
 				
 				</div>
-				
+			
 			</Carousel>
 		</>
 	
 	
 	)
 }
-	export default CarouselComponent
+export default CarouselComponent

@@ -4,7 +4,6 @@ import HomeCatalog from '@/components/homeComponents/HomeCatalog'
 import Swiper from '@/components/homeComponents/Swiper'
 
 const Home = () => {
-	
 	return (
 		<div>
 			<CarouselComponent/>
